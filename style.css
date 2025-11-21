@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #f3f3f3;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.icons span {
+    margin-left: 14px;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: flex;
+    padding: 20px 40px;
+}
+
+/* FILTERS */
+.filters {
+    width: 18%;
+}
+
+.filters h3 {
+    margin-bottom: 20px;
+}
+
+.filter-block {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* PRODUCTS AREA */
+.products-section {
+    width: 82%;
+    padding-left: 40px;
+    position: relative;
+}
+
+/* TITLE AREA */
+.title-area h2 {
+    margin: 0;
+}
+
+.title-area p {
+    color: #555;
+    margin: 5px 0 20px;
+}
+
+/* RECOMMENDED BLOCK TOP RIGHT */
+.recommended-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+}
+
+.recommended-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.recommended-line {
+    width: 80px;
+    height: 2px;
+    background: #000;
+    margin-bottom: 8px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 56px;
+    /* space below recommended block */
+}
+
+.product-card {
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    position: relative;
+    background: white;
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.price-msg {
+    font-size: 13px;
+    color: #666;
+    width: 80%;
+}
+
+/* HEART ICON AT BOTTOM RIGHT */
+.wish {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 36px 40px 18px 40px;
+    font-size: 14px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 18px;
+}
+
+.footer-signup h3,
+.footer-contact h3 {
+    margin: 0 0 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer-signup p {
+    margin: 7px 0 12px 0;
+}
+
+.footer-signup form {
+    display: flex;
+    gap: 0;
+}
+
+.footer-signup input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    width: 250px;
+    margin-right: 0;
+}
+
+.footer-signup button {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    font-weight: bold;
+}
+
+.footer-contact {
+    max-width: 320px;
+}
+
+.footer-contact .flag {
+    display: inline-block;
+    width: 22px;
+    height: 14px;
+    background: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg') no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.footer-contact small {
+    color: #bbb;
+    font-size: 12px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222;
+    margin: 18px 0;
+}
+
+.footer-links-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    margin-bottom: 18px;
+}
+
+.footer-col {
+    min-width: 180px;
+}
+
+.footer-col h4 {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer-col p {
+    margin: 7px 0;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 21px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.payment-icon {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 2px 8px;
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 9px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 25px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-grid {
+    text-align: center;
+    margin: 28px 0;
+}
+
+.product-card {
+    display: inline-block;
+    width: 220px;
+    border: 1px solid #c6c6c6;
+    margin: 12px;
+    vertical-align: top;
+    background: #fff;
+    padding: 12px 8px 24px 8px;
+    position: relative;
+}
+
+.product-img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.price-msg {
+    font-size: 13px;
+    color: #666;
+    width: 90%;
+    margin: 8px auto;
+}
+
+.sign-in-btn {
+    display: block;
+    width: 80%;
+    margin: 8px auto 0 auto;
+    padding: 6px 0;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.wish {
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    font-size: 20px;
+}
+
+/* Modal styles (basic positioning, no advanced features) */
+.modal-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.4;
+    z-index: 100;
+}
+
+.modal-signin {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 270px;
+    margin-left: -135px;
+    margin-top: -140px;
+    background: #fff;
+    padding: 18px 18px 10px 18px;
+    border-radius: 4px;
+    box-shadow: 2px 3px 12px #999;
+    text-align: center;
+    z-index: 101;
+}
+
+.modal-signin h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.modal-signin input[type="text"],
+.modal-signin input[type="password"] {
+    width: 86%;
+    padding: 7px;
+    margin: 7px 0;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.modal-signin button[type="submit"] {
+    background: #222;
+    color: #fff;
+    padding: 7px 18px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 9px;
+    font-size: 15px;
+}
+
+.close-modal {
+    margin-top: 13px;
+    display: block;
+    width: 88%;
+    background: #eee;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 0;
+    cursor: pointer;
+}
